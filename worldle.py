@@ -4,10 +4,10 @@ from words import words
 word = random.choice(words)
 
 print("\n\nWelcome to Python Wordle!")
-print("Guess the 5 letter word. You have 6 attempts.\n\n")
+print("Guess the 5 letter word. You have 10 attempts.\n\n")
 
-for attempt in range(6):
-    guess = input(f"\nGuess {attempt + 1}/6: ").lower()
+for attempt in range(10):
+    guess = input(f"\nGuess {attempt + 1}/10: ").lower()
 
     if len(guess) != 5:
         print("Please enter exactly 5 letters.\n")
